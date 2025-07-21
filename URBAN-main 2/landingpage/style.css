@@ -1,0 +1,227 @@
+body{
+    background-color: #ffff;
+}
+
+.header{
+    padding: 40px;
+    position: relative;
+    right: 300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.color{
+    color: black;
+}
+.shopping{
+    position: relative;
+    right: 10px;
+}
+.logo{
+    position: relative;
+    right: 900px;
+    
+}
+.bag{
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+
+.videoshow{
+    width: 400px;
+    position: relative;
+    left: 230px;
+    top: 100px;
+    border-radius: 15px;
+}
+
+.sentence{
+    width: 45%;
+    position: relative;
+    left: 47%;
+    top: -440px;
+    font-size: 17.4px;
+}
+
+.aboutus{
+    position: relative;
+}
+
+.about{
+    position: absolute;
+    left: 60%;
+    top: -580px;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.shopnow{
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+
+.create{
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    bottom: 300px;
+    font-size: 60px;
+}
+
+.createyourown{
+    width: 1676px;
+    position: relative;
+    left:2px;
+    bottom: 250px;
+}
+
+
+.explore{
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    font-size: 60px;
+    bottom: 150px;
+}
+.exploreidea{
+    width: 1676px;
+    position: relative;
+    left: 2px;
+    bottom: 100px;
+
+}
+
+.sixth{
+    text-align: center;
+    height: 100px;
+    width: 1680px;
+    background-color: black;
+    color:#f4f4f4;
+}
+
+.collection{
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.containerr{
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+    gap: 50px;
+}
+
+.models{
+    width: 400px;
+    margin-top: 120px;
+    border-radius: 10px;
+}
+
+.ali-text{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.price{
+    text-align: center;
+    font-weight: bold;
+}
+
+.tc-container{
+    position: relative;
+}
+
+.top-img{
+    position: absolute;
+    left: 0;
+    top: 120px;
+    opacity: 0;
+    width: 400px;
+    transition: all linear 0.2s ;
+    
+
+}
+
+.top-img:hover{
+    opacity: 1;
+}
+
+
+
+span{
+    font-weight: bold;
+}
+
+.fifth{
+    padding-top: 70px;
+}
+
+
+.padlast{
+    padding: 90px;
+    background-color: #FAF9F8;;
+}
+
+
+.footalign{
+    position: relative;
+    right: 220px;
+    padding-top: 100px;
+    
+}
+
+.p-size{
+    font-size: 13px;
+}
+
+.h-size{
+    font-size: 15px;
+}
+
+.common{
+    width: 23px;
+    padding-top: 50px;
+}
+
+
+.containerrr{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    left: 590px;
+    padding-bottom: 120px;
+
+}
+
+.copyrights{
+    width: 710px;
+    position: absolute;
+    right: -80%;
+    padding-top: 40px;
+    
+}
+
+.createbutton{
+    position: relative;
+    left: 42%;
+    bottom: 340px;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.point{
+    cursor: pointer;
+}
+
+.sharklogo{
+    width:80px;
+    position: relative;
+    left:-800px;
+}

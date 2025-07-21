@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            background-color: rgb(247, 246, 246);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            padding: 50px;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Urban Threads!</h1>
+        <h3 id="welcomeMessage">Loading...</h3>
+    </div>
+
+    <script>
+        // Retrieve data from localStorage
+        let userEmail = localStorage.getItem("userEmail");
+        let userName = localStorage.getItem("userName");
+
+        // Display the user's name (or email if name is not provided)
+        if (userName) {
+            document.getElementById("welcomeMessage").innerText = `Hello, ${userName}!`;
+        } else if (userEmail) {
+            document.getElementById("welcomeMessage").innerText = `Hello, user with email ${userEmail}!`;
+        } else {
+            document.getElementById("welcomeMessage").innerText = "No user data found!";
+        }
+
+        function change(){
+            window.location.href="index.html"
+
+        }
+        setTimeout(change,3000);
+            
+        
+    </script>
+
+</body>
+</html>

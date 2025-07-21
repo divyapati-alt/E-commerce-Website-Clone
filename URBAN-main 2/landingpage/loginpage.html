@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            background-color: rgb(247, 246, 246);
+            display: flex;
+            align-items: center;
+            height: 80vh;
+            justify-content: center;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            padding: 90px;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            bottom: 40px;
+        }
+        h4 {
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            bottom: 160px;
+        }
+        input {
+            width: 100%;
+            height: 27px;
+            position: relative;
+            bottom: 60px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: rgb(7, 7, 7);
+            color: white;
+            height: 45px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form class="register" onsubmit="storeUserData(event)">
+        <div class="container">
+            <h1>URBAN THREADS</h1>
+            <h4>CREATE THE WAY YOU LIKE</h4>
+            <h3>Log in</h3>
+            <p class="fo"> <label for="" class="para">Enter your email and we'll send you a login code</label></p>
+            <input id="inp" placeholder="Email" type="email" required>
+            <input id="name" placeholder="Enter Name" type="text" required>
+            <button class="b" type="submit">Continue</button>
+        </div>
+    </form>
+
+    <script>
+        // Function to store user data in localStorage
+        function storeUserData(event) {
+            event.preventDefault(); // Prevent form submission
+
+            let email = document.getElementById("inp").value;
+            let name = document.getElementById("name").value;
+
+            // Save data to localStorage
+            localStorage.setItem("userEmail", email);
+            localStorage.setItem("userName", name);
+
+            // Redirect to index.html after storing data
+            window.location.href = "index1.html";
+        }
+    </script>
+</body>
+</html>
